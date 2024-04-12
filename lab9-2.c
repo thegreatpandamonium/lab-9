@@ -87,11 +87,12 @@ void displayRecordsInHash(struct HashType *pHashArray, int hashSz)
 
 	for (i=0;i<hashSz;++i)
 	{
-		// Print index
-		printf("Index %d: ", i);
 
 		if (pHashArray->arr[i] != NULL)
 		{
+			// Print index
+			printf("Index %d: ", i);
+			
 			struct RecordType *currentRecord = pHashArray->arr[i];
 			while (currentRecord != NULL)
 			{
