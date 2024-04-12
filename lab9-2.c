@@ -85,7 +85,7 @@ void displayRecordsInHash(struct HashType *pHashArray, int hashSz)
 {
 	int i;
 
-	for (i = 0; i < pHashArray->size; ++i)
+	for (i=0;i<hashSz;++i)
 	{
 		// Print index
 		printf("Index %d: ", i);
@@ -102,7 +102,7 @@ void displayRecordsInHash(struct HashType *pHashArray, int hashSz)
 		}
 		else
 		{
-			printf("\n"); 
+			continue;
 		}
 	}
 }
